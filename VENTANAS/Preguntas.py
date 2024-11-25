@@ -1,0 +1,22 @@
+lista_preguntas = [
+    {"pregunta": "¿Cómo se llama la escuela de magia a la que asiste Harry Potter?", "respuesta_1": "Durmstrang", "respuesta_2": "Hogwarts", "respuesta_3": "Beauxbatons", "respuesta_correcta": 2},
+    {"pregunta": "¿Cómo se llama el mejor amigo de Harry Potter?", "respuesta_1": "Ron Weasley", "respuesta_2": "Neville Longbottom", "respuesta_3": "Draco Malfoy", "respuesta_correcta": 1},
+    {"pregunta": "¿Quién es el director de Hogwarts durante la mayor parte de la serie?", "respuesta_1": "Gilderoy Lockhart", "respuesta_2": "Severus Snape", "respuesta_3": "Albus Dumbledore", "respuesta_correcta": 3},
+    {"pregunta": "¿Cómo se llama el villano principal de la saga?", "respuesta_1": "Sirius Black", "respuesta_2": "Lord Voldemort", "respuesta_3": "Lucius Malfoy", "respuesta_correcta": 2},
+    {"pregunta": "¿Qué criatura mágica es el Patronus de Harry Potter?", "respuesta_1": "Ciervo", "respuesta_2": "Lobo", "respuesta_3": "Fénix", "respuesta_correcta": 1},
+    {"pregunta": "¿En qué casa de Hogwarts fue seleccionado Draco Malfoy?", "respuesta_1": "Gryffindor", "respuesta_2": "Ravenclaw", "respuesta_3": "Slytherin", "respuesta_correcta": 3},
+    {"pregunta": "¿Cómo se llama el elfo doméstico que ayuda a Harry?", "respuesta_1": "Kreacher", "respuesta_2": "Dobby", "respuesta_3": "Winky", "respuesta_correcta": 2},
+    {"pregunta": "¿Quién escribió la serie de libros de Harry Potter?", "respuesta_1": "J.R.R. Tolkien", "respuesta_2": "J.K. Rowling", "respuesta_3": "George R.R. Martin", "respuesta_correcta": 2},
+    {"pregunta": "¿Cuál es el deporte más popular en el mundo mágico?", "respuesta_1": "Quidditch", "respuesta_2": "Gobstones", "respuesta_3": "Exploding Snap", "respuesta_correcta": 1},
+    {"pregunta": "¿Cómo se llama el banco de los magos?", "respuesta_1": "Gringotts", "respuesta_2": "Hogsmeade", "respuesta_3": "Diagon Alley", "respuesta_correcta": 1},
+    {"pregunta": "¿Qué objeto convierte al portador en invisible?", "respuesta_1": "La Capa de Invisibilidad", "respuesta_2": "El Sombrero Seleccionador", "respuesta_3": "La Varita de Saúco", "respuesta_correcta": 1},
+    {"pregunta": "¿Cómo se llama la poción que permite asumir la apariencia de otra persona?", "respuesta_1": "Poción Multijugos", "respuesta_2": "Poción Felix Felicis", "respuesta_3": "Poción de la Verdad", "respuesta_correcta": 1},
+    {"pregunta": "¿Cuál es el nombre del tren que lleva a los estudiantes a Hogwarts?", "respuesta_1": "Expreso de Hogwarts", "respuesta_2": "Expreso Mágico", "respuesta_3": "Tren de Hogsmeade", "respuesta_correcta": 1},
+    {"pregunta": "¿Qué criatura mágica guarda la Cámara de los Secretos?", "respuesta_1": "Un Troll", "respuesta_2": "Un Basilisco", "respuesta_3": "Un Dragón", "respuesta_correcta": 2},
+    {"pregunta": "¿Cuál es el nombre de la madre de Harry Potter?", "respuesta_1": "Lily Potter", "respuesta_2": "Ginny Potter", "respuesta_3": "Molly Potter", "respuesta_correcta": 1},
+    {"pregunta": "¿Qué tipo de animal es Hedwig, la mascota de Harry?", "respuesta_1": "Un gato", "respuesta_2": "Un búho", "respuesta_3": "Un sapo", "respuesta_correcta": 2},
+    {"pregunta": "¿Cómo se llama la profesora de Pociones en los primeros libros?", "respuesta_1": "Minerva McGonagall", "respuesta_2": "Severus Snape", "respuesta_3": "Horace Slughorn", "respuesta_correcta": 2},
+    {"pregunta": "¿Qué significa la palabra 'Muggle'?", "respuesta_1": "Una persona sin poderes mágicos", "respuesta_2": "Un hechizo fallido", "respuesta_3": "Un objeto encantado", "respuesta_correcta": 1},
+    {"pregunta": "¿Qué hechizo se usa para desarmar a otro mago?", "respuesta_1": "Expelliarmus", "respuesta_2": "Stupefy", "respuesta_3": "Wingardium Leviosa", "respuesta_correcta": 1},
+    {"pregunta": "¿En qué casa de Hogwarts fue seleccionada Hermione Granger?", "respuesta_1": "Hufflepuff", "respuesta_2": "Ravenclaw", "respuesta_3": "Gryffindor", "respuesta_correcta": 3}
+]

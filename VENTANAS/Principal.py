@@ -37,9 +37,16 @@ while corriendo:
             pygame.mixer.music.set_volume(porcentaje_coma)
             pygame.mixer.music.play(-1)
             bandera_juego = True
-            
+
         ventana_actual = mostrar_juego(pantalla,cola_eventos,datos_juego)
     elif ventana_actual == "configuracion":
+        if bandera_juego == False:
+            porcentaje_coma = datos_juego["volumen_musica"] / 100
+            pygame.mixer.init()
+            pygame.mixer.music.load("musica.mp3")
+            pygame.mixer.music.set_volume(porcentaje_coma)
+            pygame.mixer.music.play(-1)
+            bandera_juego = True
         ventana_actual = mostrar_ajustes(pantalla,cola_eventos,datos_juego)
     elif ventana_actual == "puntuaciones":
         ventana_actual = mostrar_rankings(pantalla,cola_eventos)

@@ -24,6 +24,8 @@ boton_mute["superficie"] = pygame.Surface(TAMAÑO_BOTON_VOLVER)
 boton_mute["rectangulo"] = boton_mute["superficie"].get_rect()
 boton_mute["superficie"].fill(COLOR_VERDE)
 
+
+
 def mostrar_ajustes(pantalla:pygame.Surface,cola_eventos:list[pygame.event.Event],datos_juego:dict) -> str:
     retorno = "configuracion"
     
@@ -60,14 +62,14 @@ def mostrar_ajustes(pantalla:pygame.Surface,cola_eventos:list[pygame.event.Event
                     # Restaurar el volumen guardado
                     datos_juego["volumen_musica"] = datos_juego["volumen_musica_guardado"]
                     print("MUTE DESACTIVADO")
-
+                
     porcentaje_coma = datos_juego["volumen_musica"] / 100
     pygame.mixer.music.set_volume(porcentaje_coma)
 
     pantalla.fill(COLOR_BLANCO)
     
     boton_resta["rectangulo"] = pantalla.blit(boton_resta["superficie"],(20,200))
-    boton_suma["rectangulo"] = pantalla.blit(boton_suma["superficie"],(420,200))    
+    boton_suma["rectangulo"] = pantalla.blit(boton_suma["superficie"],(320,200))    
     boton_volver["rectangulo"] = pantalla.blit(boton_volver["superficie"],(10,10))
     boton_mute["rectangulo"] = pantalla.blit(boton_mute["superficie"], (20, 170))
     
@@ -75,6 +77,6 @@ def mostrar_ajustes(pantalla:pygame.Surface,cola_eventos:list[pygame.event.Event
     mostrar_texto(boton_resta["superficie"],"VOL-",(0,10),FUENTE_22,COLOR_NEGRO)
     mostrar_texto(boton_volver["superficie"],"VOLVER",(5,5),FUENTE_22,COLOR_BLANCO)
     mostrar_texto(boton_mute["superficie"], "MUTE", (0, 10), FUENTE_22, COLOR_NEGRO)  # Mostrar texto para mute
-    mostrar_texto(pantalla,f"{datos_juego["volumen_musica"]} %",(200,200),FUENTE_50,COLOR_NEGRO)
+    mostrar_texto(pantalla,f"{datos_juego["volumen_musica"]} %",(130,200),FUENTE_50,COLOR_NEGRO)
     
     return retorno

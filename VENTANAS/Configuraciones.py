@@ -4,6 +4,9 @@ from Funciones import *
 
 pygame.init()
 
+fondo = pygame.image.load("configuracion.jpg")
+fondo = pygame.transform.scale(fondo,VENTANA)
+
 boton_suma = {}
 boton_suma["superficie"] = pygame.Surface(TAMAÑO_BOTON_VOLUMEN)
 boton_suma["rectangulo"] = boton_suma["superficie"].get_rect()
@@ -20,9 +23,11 @@ boton_volver["rectangulo"] = boton_volver["superficie"].get_rect()
 boton_volver["superficie"].fill(COLOR_AZUL)
 
 boton_mute = {}  # Botón de mute
-boton_mute["superficie"] = pygame.Surface(TAMAÑO_BOTON_VOLVER)
+boton_mute["superficie"] = pygame.image.load("vol_mute.png") 
+boton_mute["superficie"] = pygame.transform.scale(boton_mute["superficie"],TAMAÑO_BOTON_VOLUMEN)
 boton_mute["rectangulo"] = boton_mute["superficie"].get_rect()
-boton_mute["superficie"].fill(COLOR_VERDE)
+
+
 
 
 
@@ -67,16 +72,16 @@ def mostrar_ajustes(pantalla:pygame.Surface,cola_eventos:list[pygame.event.Event
     pygame.mixer.music.set_volume(porcentaje_coma)
 
     pantalla.fill(COLOR_BLANCO)
-    
+    pantalla.blit(fondo, (0, 0))
     boton_resta["rectangulo"] = pantalla.blit(boton_resta["superficie"],(20,200))
     boton_suma["rectangulo"] = pantalla.blit(boton_suma["superficie"],(320,200))    
     boton_volver["rectangulo"] = pantalla.blit(boton_volver["superficie"],(10,10))
-    boton_mute["rectangulo"] = pantalla.blit(boton_mute["superficie"], (20, 170))
+    boton_mute["rectangulo"] = pantalla.blit(boton_mute["superficie"], (20, 130))
     
     mostrar_texto(boton_suma["superficie"],"VOL+",(0,10),FUENTE_22,COLOR_NEGRO)
     mostrar_texto(boton_resta["superficie"],"VOL-",(0,10),FUENTE_22,COLOR_NEGRO)
     mostrar_texto(boton_volver["superficie"],"VOLVER",(5,5),FUENTE_22,COLOR_BLANCO)
-    mostrar_texto(boton_mute["superficie"], "MUTE", (0, 10), FUENTE_22, COLOR_NEGRO)  # Mostrar texto para mute
+    mostrar_texto(boton_mute["superficie"], "MUTE", (10, 10), FUENTE_20, COLOR_BLANCO)  # Mostrar texto para mute
     mostrar_texto(pantalla,f"{datos_juego["volumen_musica"]} %",(130,200),FUENTE_50,COLOR_NEGRO)
     
     return retorno

@@ -22,7 +22,7 @@ TAMAÑO_BOTON_VOLUMEN = (60,60)
 TAMAÑO_BOTON_VOLVER = (100,40)
 TAMAÑO_BOTON_COMODIN = (80,80)
 
-
+FUENTE_20 = pygame.font.SysFont("Arial",20)
 FUENTE_22 = pygame.font.SysFont("Arial",22)
 FUENTE_25 = pygame.font.SysFont("Arial",25)
 FUENTE_27 = pygame.font.SysFont("Arial",27)

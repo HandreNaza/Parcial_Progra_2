@@ -10,7 +10,8 @@ cuadro_pregunta["superficie"] = pygame.image.load("fondo.jpg")
 cuadro_pregunta["superficie"] = pygame.transform.scale(cuadro_pregunta["superficie"],TAMAÑO_PREGUNTA)
 cuadro_pregunta["rectangulo"] = cuadro_pregunta["superficie"].get_rect()
 #cuadro_pregunta["superficie"].fill(COLOR_ROJO)
-#------------comodin
+
+#----------Boton--comodin
 boton_comodin = {}
 boton_comodin["superficie"] = pygame.image.load("boton_inicio.png")  # Carga la imagen del botón
 boton_comodin["superficie"] = pygame.transform.scale(boton_comodin["superficie"], TAMAÑO_BOTON)  # Escala la imagen al tamaño del botón
@@ -19,7 +20,7 @@ boton_comodin["rectangulo"] = boton_comodin["superficie"].get_rect()
 
 lista_respuestas = []
 
-for i in range(3):
+for i in range(4):
     cuadro_respuesta = {}
     cuadro_respuesta["superficie"] = pygame.Surface(TAMAÑO_RESPUESTA)
     cuadro_respuesta["rectangulo"] = cuadro_respuesta["superficie"].get_rect()
